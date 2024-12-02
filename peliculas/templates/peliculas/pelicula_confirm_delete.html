@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Peliculas</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'peliculas/style.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Eliminar Pelicula</h1>
+            <h2>¿Esta seguro que desea eliminar la pelicula? {{pelicula.nombre}}</h2>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit">Confirmar</button>
+            </form>
+            <br/>
+            <a class="btn" href="{% url 'pelicula_list' %}">Cancelar</a>
+        </div>
+    </body>
+</html>

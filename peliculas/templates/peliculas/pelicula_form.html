@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'peliculas/style.css' %}">
+
+        <title> Peliculas </title>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1>{% if form.instance.pk %} Editar Pelicula {% else %} Añadir Peliculas {% endif%}</h1>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p}}
+                {% if pelicula.foto %}
+                <div class="image-container">
+                    <p>Foto Actual</p>
+                    <img src="{{ pelicula.foto.url }}"
+                    alt="Foto de {{ pelicula.nombre }}"
+                    width="150"
+                    >
+                </div>
+            {% endif %}
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+    </body>
+</html>

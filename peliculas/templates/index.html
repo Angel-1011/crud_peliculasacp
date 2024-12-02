@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+
+        <title> Explora ACP</title>
+
+        <!-- Enlace a archivo css-->
+         {% load static %}
+
+        <link rel="stylesheet" type="text/css" href="{% static 'peliculas/css/style.css' %}" >
+        <link rel="stylesheet" type="text/css" href="{% static 'peliculas/css/boxicons.min.css' %}">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        
+        <header>
+            <a class="logo" href="#">Explora <span>ACP</span></a>
+            <ul class="navbar">
+                <li><a href="#home">Ofertas</a></li>
+                <li><a href="#info">Vuelos</a></li>
+                <li><a href="#">Hoteles</a></li>
+                <li><a href="#">Actividades</a></li>
+            </ul>
+
+            <div class="h-derecha">
+                <a href="#">Síguenos</a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <div class="bx bx-menu" id ="menu-icon"></div>
+            </div>
+        </header>
+
+        <section id="home" class="home">
+            <div class="home-text">
+                <h5 id ="typed">Destinos</h5>
+                <h1>Los mejores viajes</h1>
+                <p>¡Tus proximas vacaciones </br> estan aqui!
+                </p>
+                <a href="#" id="btn-Reserva" class="btn">Reserva HOY</a>
+            </div>
+        </section>
+        <!--Sección con columnas-->
+
+        <section id= "info" class="columnas">
+            <div data-aos="zoom-in" class="col-content">
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'peliculas/img/senderismo.jpg' %}" alt="Imagen de senderismo">
+
+                    </div>
+                    <h4> senderismo</h4>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'peliculas/img/botes.jpg' %}" alt="Imagen de botes">
+
+                    </div>
+                    <h4> botes</h4>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'peliculas/img/esqui.jpg' %}" alt="Imagen de esqui">
+
+                    </div>
+                    <h4> esqui</h4>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'peliculas/img/hospedajes.jpg' %}" alt="Imagen de hospedajes">
+
+                    </div>
+                    <h4> hospedajes</h4>
+                </div>
+                <div class="row">
+                    <div class="row-img">
+                        <img src="{% static 'peliculas/img/comida.jpg' %}" alt="Imagen de comida">
+
+                    </div>
+                    <h4> comida</h4>
+                </div>
+            </div>
+        <!-- seccion de ofertas-->
+        </section>
+        <section class="ofertas">
+            <div class="col-ofert">
+                <div class="of">
+                    <div data-aos="flip-down" class="of-img">
+                        <img src="{% static 'peliculas/img/ofertas.jpg' %}" alt="imagen de ofertas">
+                    </div>
+                </div>
+                <div class="of">
+                    <div class="of-img">
+                        <h4>Ofertas</h4> </br>
+                        <h1>Tiempo limitado</h1> </br>
+                        <p>¡Obten un recorrido gratis por la zonas turisticas al reservar en cualquiera de nuestros planes de viajes! </p></div> </br> </br>
+                        <a href="#" id="btn-Oferta" class="btn2">Aprovecha ya</a>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!-- Imagen pequeña antes del footer -->
+        <div data-aos="flip-up" class="footer-img-container">
+        <img src="{% static 'peliculas/img/Explora.webp'%}" alt="Imagen logo" class="footer-img">
+        </div>
+        <!-- seccion de fotter-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Explora ACP</h4>
+                        <p>Descubre los mejores destinos, hoteles y actividades para tus vacaciones. ¡Aprovecha nuestras ofertas limitadas!</p>
+                    </div>
+        
+                    <div class="footer-col">
+                        <h4>Enlaces rápidos</h4>
+                        <ul>
+                            <li><a href="#home">Ofertas</a></li>
+                            <li><a href="#info">Vuelos</a></li>
+                            <li><a href="#">Hoteles</a></li>
+                            <li><a href="#">Actividades</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-col">
+                        <h4>Síguenos</h4>
+                        <div class="social-links">
+                            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-youtube'></i></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Explora ACP. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="{% static 'peliculas/js/script.js' %}"> </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</html>
