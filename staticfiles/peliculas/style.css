@@ -1,0 +1,334 @@
+/* static/peliculas/style.css */
+
+/* Añadir fuentes */
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    src: url('fonts/notosans_regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 300; 
+    src: url('fonts/notosans_light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 500; 
+    src: url('fonts/notosans_medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 600; 
+    src: url('fonts/notosans_semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: italic; 
+    font-weight: 400;
+    src: url('fonts/notosans_italic.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --text-color: #000000;
+    --bg-color: #000;
+    --main-color: #805d39;
+    --p-font: 1rem;
+    --h2-font: 3rem;
+    --h1-font: 6rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+    background: linear-gradient(to left, 
+                                rgba(211, 103, 103, 0.6), 
+                                rgba(149, 19, 82, 0.6), 
+                                rgba(190, 190, 48, 0.3));
+    font-family: 'Noto Sans', sans-serif; /* Aplicar la fuente al cuerpo */
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: var(--h2-font);
+    font-family: 'Noto Sans', 600; /* Usar la fuente semibold para h1 */
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 40px;
+    background: var(--main-color);
+    color: #e4dcdc;
+    font-size: 15px;
+    font-weight: 600; /* Semibold */
+    cursor: pointer;
+    border: 2px solid transparent;
+    font-family: 'Noto Sans', 600; /* Usar fuente semibold para botones */
+}
+
+.container {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.peliculas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: var(--p-font);
+    font-family: 'Noto Sans', sans-serif; /* Usar fuente Noto Sans para la tabla */
+}
+
+.peliculas-table thead {
+    background-color: var(--main-color);
+    color: white;
+    letter-spacing: 5px;
+}
+
+.peliculas-table th, .peliculas-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.peliculas-table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.peliculas-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.peliculas-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.peliculas-table td {
+    color: #333;
+}
+
+.peliculas-table td a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.peliculas-table td a:hover {
+    text-decoration: underline;
+}
+
+form.search {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Noto Sans', 600; /* Usar fuente semibold para las etiquetas */
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: 'Noto Sans', sans-serif; /* Usar fuente Noto Sans para inputs */
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: var(--main-color);
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Noto Sans', 600; /* Usar fuente semibold para botones */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004494;
+}
+/* Estilos para el formulario de inicio de sesión */
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.login-form h2 {
+    color: var(--main-color);
+    font-size: var(--h2-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Noto Sans', 600; /* Semibold */
+    color: #333;
+}
+
+.login-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.login-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.login-form button {
+    padding: 12px 20px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Noto Sans', 600; /* Semibold */
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el formulario de registro */
+.register-form {
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.register-form h2 {
+    color: var(--main-color);
+    font-size: var(--h2-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-form label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Noto Sans', 600; /* Semibold */
+    color: #333;
+}
+
+.register-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.register-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.register-form button {
+    padding: 12px 20px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Noto Sans', 600; /* Semibold */
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.register-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Mensajes de error para ambos formularios */
+form .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+form ul {
+    padding: 0;
+    margin: 10px 0;
+}
+
+form ul li {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    font-family: 'Noto Sans', sans-serif;
+}
