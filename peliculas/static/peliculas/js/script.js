@@ -23,11 +23,10 @@ document.getElementById('btn-Reserva').addEventListener('click', function(){
 })
 
 // funcion para el boton 'Oferta'
-document.getElementById('btn-Oferta').addEventListener('click', function(){
-    alert('¡Su registro a sido guardado!')
-})
-
-
+document.getElementById('btn-Oferta').addEventListener('click', function(event){
+    event.preventDefault();  // Evita el comportamiento predeterminado de redirección
+    alert('¡Su registro ha sido guardado!');
+  });
 
 document.querySelectorAll('.navbar a[href^="#"]').forEach(function(enlace){
     enlace.addEventListener('click', function(e){
