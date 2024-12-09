@@ -28,6 +28,7 @@ document.getElementById('btn-Oferta').addEventListener('click', function(){
 })
 
 
+
 document.querySelectorAll('.navbar a[href^="#"]').forEach(function(enlace){
     enlace.addEventListener('click', function(e){
         e.preventDefault();
