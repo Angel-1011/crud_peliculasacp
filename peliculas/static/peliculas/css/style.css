@@ -11,7 +11,7 @@
 
 :root{
     --text-color: #ffffff;
-    --bg-color: #050505;
+    --bg-color: #0c0c0c;
     --main-color: #41c2af;
     --p-font: 1rem;
     --h2-font: 3rem;
@@ -129,7 +129,7 @@ section{
     width: 100%;
     background: linear-gradient(to left,
                                  rgba(161, 216, 194, 0.6),
-                                rgba(226, 136, 57, 0.3),
+                                 rgba(115, 232, 223, 0.6),
                                 rgba(54, 184, 193, 0.3)
 
     );
@@ -292,7 +292,7 @@ section{
     display: inline;
     padding: 13px 40px;
     background: var(--main-color);
-    color: var(--bg-color);
+    color: white !important;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
