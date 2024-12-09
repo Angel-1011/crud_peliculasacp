@@ -357,3 +357,75 @@ form ul li {
     margin-bottom: 5px;
     font-family: 'Noto Sans', sans-serif;
 }
+/* Media Query para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%; /* Reducir el ancho del contenedor */
+        padding: 10px; /* Reducir el padding para pantallas pequeñas */
+    }
+
+    .peliculas-table {
+        width: 100%; /* Asegurarse de que la tabla ocupe el 100% del ancho */
+        display: block; /* Permite que la tabla sea desplazable */
+        overflow-x: auto; /* Habilitar desplazamiento horizontal en caso de que sea necesario */
+        white-space: nowrap; /* Evitar que las celdas de la tabla se rompan */
+    }
+
+    .peliculas-table th, .peliculas-table td {
+        padding: 8px; /* Reducir el padding para que la tabla no ocupe tanto espacio */
+        font-size: 0.9rem; /* Reducir el tamaño de fuente para pantallas pequeñas */
+    }
+
+    /* Estilos para los botones y entradas de formulario */
+    .btn, button, .login-form button, .register-form button {
+        width: 100%; /* Hacer los botones de ancho completo */
+        padding: 12px 0; /* Aumentar la altura de los botones */
+    }
+
+    .peliculas-table td {
+        font-size: 0.9rem; /* Reducir el tamaño de la fuente en las celdas */
+    }
+
+    /* Modificar la tabla para pantallas más pequeñas */
+    .peliculas-table thead {
+        font-size: 1rem; /* Reducir el tamaño de fuente del encabezado */
+    }
+
+    .peliculas-table tbody tr {
+        display: block; /* Hacer las filas de la tabla bloques */
+        margin-bottom: 10px; /* Espaciado entre las filas */
+        width: 100%; /* Asegurarse de que las filas ocupen todo el ancho */
+    }
+
+    .peliculas-table td {
+        display: block; /* Hacer que cada celda sea un bloque */
+        text-align: right; /* Alinear el texto a la derecha para mejor presentación */
+        padding-left: 50%; /* Añadir un padding para simular la apariencia de columnas */
+        position: relative;
+    }
+
+    .peliculas-table td::before {
+        /* Añadir etiquetas antes de cada celda para simular encabezados en vistas móviles */
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Ajustes en el formulario */
+    .login-form, .register-form {
+        width: 100%; /* Asegurarse de que los formularios ocupen todo el ancho */
+        padding: 15px; /* Reducir el padding */
+    }
+
+    .login-form input, .register-form input {
+        font-size: 14px; /* Reducir tamaño de la fuente en los inputs */
+    }
+
+    .login-form button, .register-form button {
+        font-size: 14px; /* Reducir el tamaño de los botones */
+    }
+}
+
