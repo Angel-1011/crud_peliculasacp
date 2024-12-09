@@ -16,12 +16,7 @@
         {{ form.as_p }}
         <button type="submit">Iniciar sesión</button>
     </form>
-    <form class="register-form" method="post">
-        {% csrf_token %}
-        <h2>Registro de Usuarios</h2>
-        {{ form.as_p }}
-        <button type="submit">Registrarse</button>
-    </form>
+    <p>¿No tienes cuenta? <a href="{% url 'registro' %}" class="btn-register">Regístrate aquí</a></p>
 </body>
 </html>
 
