@@ -42,12 +42,12 @@ document.querySelectorAll('.navbar a[href^="#"]').forEach(function(enlace){
 // cambiar las imagenes de fondo de la sección home
 
 const imagenesAcp = [
-    'img/viajes1.jpg',
-    'img/botes.jpg',
-    'img/comida.jpg',
-    'img/esqui.jpg',
-    'img/hospedajes.jpg',
-    'img/senderismo.jpg'
+    'peliculas/img/viajes1.jpg',
+    'Peliculas/img/botes.jpg',
+    'Peliculas/img/comida.jpg',
+    'peliculas/img/esqui.jpg',
+    'peliculas/img/hospedajes.jpg',
+    'peliculas/img/senderismo.jpg'
 ];
 
 const homeSection = document.querySelector('.home');
