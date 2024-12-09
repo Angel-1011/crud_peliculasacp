@@ -15,8 +15,8 @@
         <h2>Iniciar sesión</h2>
         {{ form.as_p }}
         <button type="submit">Iniciar sesión</button>
+        <p>¿No tienes cuenta? <a href="{% url 'registro' %}" class="btn-register">Regístrate aquí</a></p>
     </form>
-    <p>¿No tienes cuenta? <a href="{% url 'registro' %}" class="btn-register">Regístrate aquí</a></p>
 </body>
 </html>
 

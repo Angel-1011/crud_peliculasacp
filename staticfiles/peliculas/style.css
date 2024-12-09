@@ -250,7 +250,32 @@ button:active {
 .login-form button:hover {
     background-color: #0056b3;
 }
+/* Estilo para el botón de "Iniciar sesión" */
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+/* Estilo para el enlace de "Regístrate aquí" */
+.btn-register {
+    text-align: center;
+    display: inline-block; /* Hace que el enlace se comporte como un bloque */
+    padding: 10px;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px; /* Espacio entre el botón y el enlace */
+    font-weight: bold;
+}
+
+/* Opcional: Estilo cuando el enlace está en hover */
+.btn-register:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
 /* Estilos para el formulario de registro */
 .register-form {
     width: 100%;
