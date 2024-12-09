@@ -28,6 +28,7 @@ document.getElementById('btn-Oferta').addEventListener('click', function(){
 })
 
 
+
 document.querySelectorAll('.navbar a[href^="#"]').forEach(function(enlace){
     enlace.addEventListener('click', function(e){
         e.preventDefault();
@@ -42,12 +43,13 @@ document.querySelectorAll('.navbar a[href^="#"]').forEach(function(enlace){
 // cambiar las imagenes de fondo de la sección home
 
 const imagenesAcp = [
-    'img/viajes1.jpg',
-    'img/botes.jpg',
-    'img/comida.jpg',
-    'img/esqui.jpg',
-    'img/hospedajes.jpg',
-    'img/senderismo.jpg'
+    
+    '/static/peliculas/img/viajes1.jpg',
+    '/static/peliculas/img/botes.jpg',
+    '/static/peliculas/img/comida.jpg',
+    '/static/peliculas/img/esqui.jpg',
+    '/static/peliculas/img/hospedajes.jpg',
+    '/static/peliculas/img/senderismo.jpg'
 ];
 
 const homeSection = document.querySelector('.home');

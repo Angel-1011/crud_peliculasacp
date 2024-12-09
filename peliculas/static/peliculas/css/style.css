@@ -128,14 +128,14 @@ section{
     height: 100vh;
     width: 100%;
     background: linear-gradient(to left,
-                                 rgba(161, 216, 194, 0.6),
+                                 rgba(24, 209, 226, 0.6),
                                  rgba(115, 232, 223, 0.6),
-                                rgba(54, 184, 193, 0.3)
+                                rgba(24, 200, 212, 0.684)
 
     );
     background-image: linear-gradient(to left,
     rgba(115, 232, 223, 0.6),
-    rgba(239, 240, 238, 0.3)), url(../img/viajes1.jpg);
+    rgba(29, 201, 220, 0.3)), url(../img/viajes1.jpg);
     background-size: cover;
     background-position: bottom center;
     display: flex; /* al no indicar 'direction', asume que es horizontal */
